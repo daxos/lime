@@ -1,0 +1,25 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,67,10)
+  { HBox2 HBox
+    MoveScaled(0,5,65,4)
+    { pgbDownload ProgressBar
+      MoveScaled(0,0,56,4)
+      Expand = True
+    }
+    { btnAbort ToolButton
+      MoveScaled(61,0,4,4)
+      Picture = Picture["icon:/small/close"]
+    }
+  }
+  { lblStatus Label
+    MoveScaled(0,3,11,2)
+    Font = Font["Italic,-2"]
+  }
+  { lblTitle Label
+    MoveScaled(0,0,48,3)
+    Expand = True
+    Text = ("Starting download...")
+  }
+}

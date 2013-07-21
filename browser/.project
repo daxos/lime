@@ -1,0 +1,30 @@
+# Gambas Project File 3.0
+# Compiled with Gambas 3.4.1
+Title=Navegador Web
+Startup=FMain
+Icon=logo-lime.png
+Version=0.0.43
+Component=gb.image
+Component=gb.qt4
+Component=gb.form
+Component=gb.qt4.ext
+Component=gb.qt4.webkit
+Component=gb.web
+Description="Navegador Web Lima creado en gambas 3"
+TabSize=2
+ControlPublic=1
+ModulePublic=1
+Maintainer=david
+Vendor=Dax OS
+Address=davidmf@daxos.org
+Url=http://www.daxos.org
+License=General Public License
+PackageName=browser-0.0.31
+Packager=1
+Systems=ubuntu
+Menus=debian:"Applications/Network/Web Browsing"
+Categories=debian:"Network"
+Groups=debian:"net"
+Menus=ubuntu:"Applications/Network/Web Browsing"
+Categories=ubuntu:"Network"
+Groups=ubuntu:"web"

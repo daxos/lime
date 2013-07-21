@@ -1,0 +1,23 @@
+' Gambas class file
+
+
+
+
+Public Sub AddDownload(hDownload As WebDownload)
+  
+  Dim hForm As F_descargas
+  
+  hForm = New F_descargas(svwDownload)
+  hForm.Init(hDownload)
+  
+End
+
+Public Sub timRefresh_Timer()
+
+  Dim hForm As F_descargas
+  
+  For Each hForm In svwDownload.Children
+    hForm.Redraw
+  Next
+
+End

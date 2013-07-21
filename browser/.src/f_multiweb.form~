@@ -1,0 +1,17 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,174,73)
+  Picture = Picture["browser.png"]
+  Arrangement = Arrange.Horizontal
+  { WebView1 WebView
+    MoveScaled(1,1,90,72)
+    Expand = True
+    Url = "http://duckduckgo.com"
+  }
+  { WebView2 WebView
+    MoveScaled(91,1,89,72)
+    Expand = True
+    Url = "http://google.es"
+  }
+}

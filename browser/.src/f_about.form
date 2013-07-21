@@ -1,0 +1,21 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,50,24)
+  Background = &HEFEFEF&
+  Resizable = False
+  { PictureBox1 PictureBox
+    MoveScaled(1,1,11,11)
+    Picture = Picture["logo-lime.png"]
+  }
+  { TextLabel1 TextLabel
+    MoveScaled(12,2,24,4)
+    Font = Font["Ubuntu,+3"]
+    Text = ("Lime Web Browser")
+  }
+  { TextLabel2 TextLabel
+    MoveScaled(2,12,47,11)
+    Background = &HEDEDED&
+    Text = ("Navegador Web sencillo, simple, con un modo de vista distinto a los demás.                                                                                                   Creado para la distro Dax OS y para el entorno de escritorio Andromeda")
+  }
+}

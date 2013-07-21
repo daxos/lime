@@ -1,0 +1,40 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,97,64)
+  Icon = Picture["document-properties.svg"]
+  { TabStrip1 TabStrip
+    MoveScaled(0,0,98,64)
+    Background = &H425BE8&
+    Index = 0
+    Text = ("General")
+    { Panel1 Panel
+      MoveScaled(0,0,97,59)
+      Background = &HFDFDFD&
+      { aplicar Button
+        MoveScaled(75,50,16,4)
+        Text = ("Aplicar")
+      }
+      { TextBox1 TextBox
+        MoveScaled(39,15,47,7)
+        Background = &HD7D7D7&
+        Border = False
+      }
+      { Label2 Label
+        MoveScaled(10,15,27,6)
+        Font = Font["Ubuntu,+5"]
+        Text = ("Página de inicio")
+      }
+      { Label1 Label
+        MoveScaled(7,5,19,5)
+        Font = Font["Ubuntu,+8"]
+        Text = ("Inicio")
+      }
+      { actualpa Button
+        MoveScaled(37,25,29,5)
+        Text = ("Usar página actual")
+      }
+    }
+    Index = 0
+  }
+}

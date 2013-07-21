@@ -1,0 +1,35 @@
+' Gambas class file
+
+Public actual As WebView
+
+Public Sub Form_Open()
+
+Dim inicio As String
+
+  Me.Center
+  Shell "cat ~/.daxos/lime/config" To inicio
+  TextBox1.Text = inicio
+  Label1.SetFocus
+  actual = FMain.TabStrip1.Children[0]
+
+End
+
+Public Sub aplicar_Click()
+
+ ' Shell "rm ~/.daxos/lime/config" 
+  Shell "echo '" & TextBox1.Text & "' > ~/.daxos/lime/config" 
+  Me.Close
+
+End
+
+Public Sub actualpa_Click()
+
+  Dim inicio As String
+  
+'  Shell "rm ~/.daxos/lime/config" 
+  Shell "echo '" & FMain.TextBox1.Text & "' > ~/.daxos/lime/config"
+  Shell "cat ~/.daxos/lime/config" To inicio
+  TextBox1.Text = inicio
+
+End
+

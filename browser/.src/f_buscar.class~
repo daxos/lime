@@ -1,0 +1,38 @@
+' Gambas class file
+
+
+Public Sub TextBox1_Activate()
+
+Me.Height = 189 
+Me.Width = 350
+
+End
+
+Public Sub Form_Open()
+
+Me.Center
+IconView1.Add("1", "Buscar en Google", Picture["google.png"])
+IconView1.Add("2", "Buscar en Youtube", Picture["youtube.png"])
+
+
+End
+
+
+
+Public Sub IconView1_Click()
+ Dim titulos As Boolean
+
+ 
+   If Not IsNull(IconView1.Current) Then
+    Select Case IconView1.Current.Key
+     Case 1
+      FMain.actual.Url = "https://www.google.com/search?q=" & TextBox1.Text
+      IconView1.UnselectAll
+      Me.Close
+     Case 2
+      FMain.actual.Url = "https://www.youtube.com/results?search_query=" & TextBox1.Text
+      IconView1.UnselectAll
+      Me.Close
+      End Select
+        Endif
+End

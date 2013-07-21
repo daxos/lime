@@ -1,0 +1,18 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,50,7)
+  Background = &HCACACA&
+  Border = False
+  { TextBox1 TextBox
+    MoveScaled(0,0,50,7)
+    Background = &HDBDBDB&
+    Border = False
+  }
+  { IconView1 IconView
+    MoveScaled(-1,7,51,29)
+    Background = &HCACACA&
+    Orientation = Arrange.Horizontal
+    Border = False
+  }
+}

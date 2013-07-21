@@ -1,0 +1,28 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,69,45)
+  Resizable = False
+  { Panel1 Panel
+    MoveScaled(0,0,71,8)
+    Background = &H2E2E2E&
+    { PictureBox1 PictureBox
+      MoveScaled(60,0,8,8)
+      Picture = Picture["download.png"]
+      Stretch = True
+    }
+    { Label1 Label
+      MoveScaled(2,2,24,4)
+      Font = Font["Ubuntu,+4"]
+      Foreground = &HF7F7F7&
+      Text = ("Descargas")
+    }
+  }
+  { svwDownload ScrollView
+    MoveScaled(0,8,69,36)
+    Border = False
+    { timRefresh #Timer
+      #MoveScaled(42,17)
+    }
+  }
+}

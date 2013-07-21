@@ -1,0 +1,36 @@
+' Gambas class file
+
+
+Public Sub Form_Open()
+
+  Me.Center
+  FMain.Hide
+
+End
+
+Public Sub Form_Close()
+  
+  FMain.Show
+  Me.Close
+  
+End
+
+Public Sub webview1_DblClick()
+ 
+ If webview2.Visible = True Then 
+  webview2.Hide
+  Else
+    webview2.Show
+    Endif
+  
+End
+
+Public Sub webview2_DblClick()
+  
+  If webview1.Visible = True Then 
+  webview1.Hide
+  Else
+    webview1.Show
+    Endif
+  
+End
